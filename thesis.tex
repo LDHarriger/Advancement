@@ -83,6 +83,11 @@
 % even for non-included files.
 %\includeonly{chapter1}
 
+%\bibpunct{}{}{,}{s}{,}{,}
+\bibpunct{(}{)}{;}{a}{,}{,}
+%\citestyle{nature}
+
+
 \begin{document}
 
 % Preliminary pages are always loaded (TOC, CV, etc.)
@@ -103,8 +108,9 @@
 
 % "References should be formatted in style most common in discipline",
 % abbrv is only a suggestion.
-\bibliographystyle{abbrv}
-\bibliography{thesis}
+\bibliographystyle{apalike}
+%\bibliography{thesis}
+\bibliography{mendeley_v2}
 
 % The Thesis Manual says not to include appendix figures and tables in
 % the List of Figures and Tables, respectively, so these commands from

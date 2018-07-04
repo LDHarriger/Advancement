@@ -9,7 +9,7 @@
 % I think the neuroscience of sleep is intimately related to the work of non-neuronal cells forming a robust infrastructure that supports the strenuous activity and intricate, but fragile structure of the nervous system.
 
 \section*{Sleep staging}
-Sleep stages were defined by Allan Rechtschaffen and Anthony Kales in 1968 based on a method of evaluating polysomnography (PSG) comprised of three types of recordings: (1) electroencephalogram (EEG) derived from at least two electrodes placed near the center of the scalp to measure brain activity, (2) electrooculogram (EOG) ideally placed above and below the eyes to measure eye movements, (3) electromusculogram (EMG) ideally placed on and beneath the chin to measure general muscle tone \cite{Kales1968}. These three signals are then visually evaluated to stage sleep in 30 second epochs roughly according to the descriptions below:
+Sleep stages were defined by Allan Rechtschaffen and Anthony Kales in 1968 based on a method of evaluating polysomnography (PSG) comprised of three types of recordings: (1) electroencephalogram (EEG) derived from at least two electrodes placed near the center of the scalp to measure brain activity, (2) electrooculogram (EOG) ideally placed above and below the eyes to measure eye movements, (3) electromusculogram (EMG) ideally placed on and beneath the chin to measure general muscle tone \citep{Kales1968}. These three signals are then visually evaluated to stage sleep in 30 second epochs roughly according to the descriptions below:
 \begin{enumerate}
 \item[] Stage 1: Non-REM stage 1, abbreviated as NREM1, is a transitory stage of sleep onset and might be characterized as a drowsy restfulness. During this period eye movement slows and muscle tone begins to decrease. Also during this stage, the 8-12Hz alpha rhythm usually present when an awake subject closes their eyes begins to disappear; however, brief bursts of a slightly higher frequency around 12-16Hz, but with lower voltage, called spindles, may be evident.
 \item[] Stages 2-4: NREM2-4 are increasing depths of sleep. Starting with NREM2, the most prominent feature of sleep, the slow wave (SW), begins to emerge and persist through NREM4, which is why these three stages are collectively referred to as slow wave sleep (SWS). The incidence of SWs per 30 sec epoch defines the depth of sleep with thresholds of $<$20\%, 20-50\%, $>$50\% defining NREM2-4, respectively. Additionally, during NREM2 and 3, spindles may be present.
@@ -36,19 +36,51 @@ In addition to these five stages, are criteria for marking epochs during wake, m
 \subsection*{Principal Brain Regions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SW: Cortex &  thalamus, laminar, neuronal contribution. Slow waves are the principal biomarker of unconsciousness, and while many interesting features of these waveforms have been explored, much is still a mystery. 
-These waveforms can be found in nearly all brain regions, however, the cortex is the main source of this activity.  
-The cortical SW leads SW of the thalamus.
-\cite{Mak-McCully2017}.  
-SW are related to up/down pan-neuronal activation states \cite{Steriade2001}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Down states are observed in the cortex before the thalamus, and the more global the cortical SW, the more likely it is to occur in the thalamus.
+Hyperpolarization caused by downstates in the thalamus produce spindles and which are projected back to the cortex during the down-to-up state transition, coincident with replay events.
+\citep{Mak-McCully2017}. 
+
+Slow-waves are believed to emerge from the interactions between the cortex and the thalamus.
+Low-voltage gated T-type Ca$^{2+}$ channels cause low-threshold spike (LTS) Ca$^{2+}$ spikes causing rhythmic bursting with intraspike frequencies between 100-500Hz. 
+In contrast, alpha and theta waves are thought to be driven by both high-threshold spikes produced by both low T-type and high L-type voltage-gated Ca$^{2+}$ channels causing lower frequency bursting between 50-70 Hz.
+The source of EEG are supragranular cortical cells, but these involve thalamocortical interaction.
+While, \textit{in vivo} thalamic neurons produce only short delta oscillations, in decorticated animals, these oscillations are sustained (consistent with cortical disfacilitation during down states) [21-24].
+Unlike cortex, delta oscillations in the thalamic neuron rely on LTS bursts [4,20,25]
+"conclusively demonstrated in anesthetized and sleeping animals that SW EEG requires thalamic participation" [30, 37], but in isolation distinct mechanisms produce SW.
+SW are significantly reduced if synaptic transmission is blocked [21,22,38]
+TC neurons generated SW with K$^+$ leak, I$_T$, I$_CAN$, and I$_h$ [9, 11, 17, 39]. NRT neurons are similar, but also require Na$^2+$ and Ca$2+$ activated K$^+$ currents [34]. Furthermore, these can be transformed into delta rhythms with by changing the membrane potential via I$_T$ [11,17,39]. Notably, delta oscillations can occur during SW [5,6,9,34].
+
+\citep{Crunelli2018} 
+
+The up and down state can be partially explained by afterhyperpolarizations produced by Ca$^2+$ mediated increases in K$^+$ conductance in soma [47,48].
+Bereitschatfspotential, or readiness potentials, associated with surprise or initiation of movement cause synchronized afterhyperpolarizations which can produce a SW [50,51].
+Synchronized bursting pyramidal cells during NREM produce large dipole from positive infragranular and negative supragranular layers [48, 54-56].
+interneurons and thalamocortical inputs to pyramidal cells are active during down states [52,53,57,58]. 
+Cyclic nucleotide-gated hyperpolarization deinactivated (I$_h$) and low-voltage hyperpolarization-induced T-type Ca$^{2+}$ channels (I$_T$) create intrinsic cell resonance and produce oscillations of membrane potential which are unrelated to synaptic events [39]. In pyramidal cells this may produce theta rhythms [41-44], while in interneurons this may produce gamma rhythms [45,46]
+\citep{Buzsaki2012}
+
+SW are related to up/down pan-neuronal activation states
+\citep{Steriade2001}.
+
+The spindle is thought to be generated by strong intrinsic currents generated by hyperpolarization-induced interactions between thalamocortical and thalamic reticular nucleus cells through the activation of cyclic nucleotide-gated channels (I$_h$) and deinactivation of low-voltage-gated T-type Ca$^{2+}$ channels (I$_T$) \citep{Buzsaki2012, Crunelli2018, Mak-McCully2017}. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Locality}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Sleep has long been conceptualized as a global brain state, and likewise the signals were believed to be global as well. This idea was probably influenced by sparse EEG coverage since R\&K scoring can be done sufficiently with a single referenced channel. Finally, in 2011, this perspective shifted with one of the first intracranial EEG (iEEG) sleep studies in humans which showed that SWs and spindles tended to be much more local events \cite{Nir2011}.
+Sleep has long been conceptualized as a global brain state, and likewise the signals were believed to be global as well. This idea was probably influenced by sparse EEG coverage since R\&K scoring can be done sufficiently with a single referenced channel. Finally, in 2011, this perspective shifted with one of the first intracranial EEG (iEEG) sleep studies in humans which showed that SWs and spindles tended to be much more local events \citep{Nir2011}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Traveling waves}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection*{Conceptual foundations}
+Evidence of traveling waves of activity in the brain has been apparent for at least two decades \citep{Grinvald1994, Prechtl1997, Muller2018}. These waves were initially shown with voltage sensitive dyes, and in response to visual stimulation. 
+This activity has been observed in both \textit{in vivo} and \textit{in vitro} various animals including turtles, rodents, and primates indicating it is evolutionarily conserved and may be a general mechanism of neural communication \cite{Grinvald1994, Prechtl1997, Takahashi2011, Muller2014}.
+It seems traveling waves were first implicated in SW activity with \textit{in vitro} preparations of cortex \citep{Sanchez-Vives2000}. Later, the presence of a macroscopic wave organization was observed by EEG studies of humans during sleep \citep{Massimini2004}
+
+In epilepsy research, it is believed that a slow moving wave front of aberrant discharge activity propagates from the epileptic focus recruiting surrounding tissue \citep{Schevon2012, Weiss2013, Martinet2015, Martinet2017, Smith2016a, Eissa2016}. If this wavefront successfully evades inhibitory control and spreads sufficiently it can then initiate a generalized seizure \citep{Schevon2012}.
+
+Observed stereotyped sequential spread of activation in local cortical networks with spike timing precision decaying with time during up states. Some up states propagate as traveling waves, which would reinitiate local firing patterns regardless of wave direction.
+\citep{Luczak2007}
+
+
 Brain Electrophysiology Excitation Inhibition Turing pattern
 
 The body is composed of many cells of various types communicating with others at various distances and timescales. Most cells communicate by releasing signaling molecules. These signals can be passed almost immediately to a cell’s direct neighbors if there are gap junctions linking the cells; otherwise, the signal must diffuse through the extra-cellular space to reach its destination. A random walk through the tightly packed extracellular space means that the probability of a signal reaching a particular cell within some period of time falls off very quickly with distance. This problem is mitigated by the many vessels in the body providing less hindered directed channels of flow, and often propulsion to increase the speed. Although the neuron is subject to the same constraints, but it is exceptional in its ability to communicate quickly and at long distances because of a few remarkable adaptations. First, neurons leverage fast ionic conductivity by manipulating electrostatic and concentration gradients with dynamically tuned micro-fluidics. Second, some neurons have highly elongated processes which can grow to very long distances. These are far from the only remarkable features of neurons, but together, these adaptations effectively allow neurons to communicate with very distant cells as if they were next-door neighbors. While the evolutionary importance of features can hardly be overstated, the majority of neurons communicate over relatively short distances.
@@ -72,14 +104,14 @@ So, unless there is another source of the EEG signal besides neuronal activity, 
 In contrast, a perfectly local signal would be one that is isolated to a single area, and not spread to other areas. In a less strict interpretation, a local signal might be one that occurs in one location, but could be sent to another location. This is unlikely because nearby areas are more highly connected.
 
 So it is much more likely that there is a spread of activity into surrounding areas in addition to saltatory transmissions of activity to more remote areas, which in turn spread locally.
-The brain has very neurotransmitters, some with very exotic downstream effects, but on short-timescales most of them impart a transient change in ionic permeability increasing (excitatory) or decreases (inhibitory) voltage, and likewise firing probability. Furthermore, the connectivity of the neurons imparts a structure over which the excitatory and inhibitory signals can propagate. The dynamics of this system have been characterized as a reaction-diffusion system, which was famously introduced and analyzed by Alan Turing. One of the most interesting features, of such systems are their extensive repertoire of spatiotemporal dynamics. Even simple systems can be tuned to reproduce patterns like leopard spots, and over time these patterns evolve as traveling waves of patterns. [Cite:The Chemical Basis of Morphogenesis - Turing, 1952]
+The brain has very neurotransmitters, some with very exotic downstream effects, but on short-timescales most of them impart a transient change in ionic permeability increasing (excitatory) or decreases (inhibitory) voltage, and likewise firing probability. Furthermore, the connectivity of the neurons imparts a structure over which the excitatory and inhibitory signals can propagate. The dynamics of this system have been characterized as a reaction-diffusion system, which was famously introduced and analyzed by Alan Turing. One of the most interesting features, of such systems are their extensive repertoire of spatiotemporal dynamics. Even simple systems can be tuned to reproduce patterns like leopard spots, and over time these patterns evolve as traveling waves of patterns. \citep{Turing1952}
 
-Perhaps particular waveforms are emerge out of reaction diffusion stability. The detection of travelling waves could be used to infer effective connectivity. If this is the case, mapping the spatiotemporal repertoire of these waveforms may suggest its principal source and sinks, functional/computational role, facilitate a predictive model, etc. [Cite: Intracting Turing-Hopf instabilities Steyn-Ross]
+Perhaps particular waveforms are emerge out of reaction diffusion stability. The detection of travelling waves could be used to infer effective connectivity. If this is the case, mapping the spatiotemporal repertoire of these waveforms may suggest its principal source and sinks, functional/computational role, facilitate a predictive model, etc. \citep{Steyn-Ross}
 
-Use of Steyn-Ross model used to model epileptic core and penumbra spread. Epileptic core and penumbra (Schevon, 2012). Modelling spread of seizure (Schevon, 2016); (Martinet, 2016 2017).
+Use of Steyn-Ross model used to model epileptic core and penumbra spread. Epileptic core and penumbra \citep{Schevon2012}. Modelling spread of seizure \citep{Smith2016a, Martinet2015, Martinet2017}.
 
-Hippocampal waves. Cortical theta and alpha (Zhang et al, 2018).
-Rotating spindles.
+Hippocampal waves. Cortical theta and alpha \citep{Zhang2018}.
+Rotating spindles \citep{Muller2016}
 EEG SW. Ca and VSD traveling waves.
 
 SW spindle coupling.
@@ -95,9 +127,13 @@ SW spindle coupling.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ripples and hipppocampus
 \subsection*{Sharp-wave ripples}
+Entorhinal and subicular cortices as well as dentate gyrus (DG) display up and down states induced by the cortex. While, CA1 and CA3 of the hippocampus seem to lack this bimodal activity, these regions are influenced by cortical SWs: during up states, activity in CA1 and DG are increased along with the probability of ripples. Nevertheless, it seems that during down states CA3 and CA1 are able to generate gamma bursts and ripples.
+Recurrent local circuits of deep cortical layers may produce SW and synchronize large swaths of cortex via long-range cortical connections in superficial layers. They hypothesize that an excitatory front of the SW spreads from cortex to entorhinal cortex to hippocampus, which is supported by consistent delay times.
+An important physiological role of SW is to coordinate locally emerging patterns.
+\cite{Isomura2006}
 
 \subsection*{Synaptic scaling}
-Synaptic scaling is theorized to be one of the homeostatic processes which occur during sleep [cite tononi paper]. Synapses are down-regulated [during] sharp-wave ripple 
+Synaptic scaling is theorized to be one of the homeostatic processes which occur during sleep \citep{Tononi2003}. Synapses are down-regulated [during] sharp-wave ripple 
 
 \subsection*{Replay}
 
