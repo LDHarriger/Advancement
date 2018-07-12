@@ -22,6 +22,7 @@
 % Some other useful packages
 \usepackage{caption}
 \usepackage{subcaption}  % \begin{subfigure}...\end{subfigure} within figure
+\usepackage{subfloat} 
 \usepackage{multirow}
 \usepackage{tabularx}
 
@@ -110,7 +111,7 @@
 % abbrv is only a suggestion.
 \bibliographystyle{apalike}
 %\bibliography{thesis}
-\bibliography{mendeley_v2}
+\bibliography{mendeley_v2,extra}
 
 % The Thesis Manual says not to include appendix figures and tables in
 % the List of Figures and Tables, respectively, so these commands from
@@ -120,6 +121,6 @@
 \captionsetup[table]{list=no}
 
 % If you have an appendix, it should come after the references.
-\include{appendix}
+%\include{appendix}
 
 \end{document}
